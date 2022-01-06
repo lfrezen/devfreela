@@ -21,7 +21,6 @@ namespace DevFreela.UnitTests.Core.Entities
             Assert.NotEmpty(project.Description);
 
             project.Start();
-
             Assert.Equal(ProjectStatusEnum.InProgress, project.Status);
             Assert.NotNull(project.StartedAt);
         }
